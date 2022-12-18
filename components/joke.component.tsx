@@ -1,4 +1,5 @@
 import { IJoke } from "../shared/models/Joke";
+import styles from "../styles/Home.module.css";
 
 function Joke({
   data: joke,
@@ -8,10 +9,12 @@ function Joke({
   showPunchline: boolean;
 }) {
   return (
-    <div>
-      <p>{joke.setup}</p>
+    <div className={styles.jokeCard}>
+      <p className={styles.setupText}>{joke.setup}</p>
 
-      {showPunchline && <p>{joke.punchline}</p>}
+      {showPunchline && (
+        <p className={styles.punchlineText}>{joke.punchline}</p>
+      )}
     </div>
   );
 }

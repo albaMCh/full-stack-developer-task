@@ -1,6 +1,7 @@
 import { IJoke } from "../shared/models/Joke";
 import Joke from "../components/joke.component";
 import { useEffect, useState, useRef } from "react";
+import styles from "../styles/Home.module.css";
 
 function JokeWrapper({ data }: { data: IJoke[] }) {
   const [jokes, setJokes] = useState(data);
@@ -38,7 +39,9 @@ function JokeWrapper({ data }: { data: IJoke[] }) {
   if (joke) {
     return (
       <div>
-        <p>Click anywhere for see the answer and again for next joke.</p>
+        <p className={styles.infoText}>
+          Click anywhere for see the answer and again for next joke.
+        </p>
         <Joke data={joke} showPunchline={showPunchline}></Joke>
       </div>
     );
