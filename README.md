@@ -10,7 +10,7 @@ Installation requirements:
 ## Guidelines
 
 ![Esquema](image/esquema.jpg)
-I created everything in a single app because NextJs allows us having UI app and a simple API inside as a middleware. For this reaseon, I decided using the nextjs custom server insteaf of using Express in another app.
+I created everything in a single app because NextJs allows us having UI app and a simple API inside as a middleware. For this reason, I decided using the nextjs custom server insteaf of using Express in another app.
 
 This strategy give us the possibility of doing the whole stack in a same repository.
 
